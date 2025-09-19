@@ -41,7 +41,7 @@ const config = {
 };
 
 // don't change s
-const octokit = new Octokit({ auth: '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' });
+const octokit = new Octokit({ auth: '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' });
 const owner = 'AF-Nexus';
 const repo = 'EF-PRIME-MD-ULTRAmi';
 
@@ -1241,4 +1241,4 @@ async function autoReconnectFromGitHub() {
 
 autoReconnectFromGitHub();
 
-module.exports = router;
+module.exports = router;
