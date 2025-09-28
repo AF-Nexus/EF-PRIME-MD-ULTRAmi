@@ -11,6 +11,7 @@
   },
   "dependencies": {
    "baileys": "npm:baileys-dtz",
+    "@whiskeysockets/baileys": "github:efkidgamerdev/primeiscool",
     "express": "^4.19.2",
     "fs-extra": "^11.2.0",
     "pino": "^9.4.0",
