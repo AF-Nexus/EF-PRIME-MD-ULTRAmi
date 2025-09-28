@@ -13,7 +13,7 @@ const Jimp = require('jimp');
 const crypto = require('crypto');
 const axios = require('axios');
 
-import baileys from 'baileys';
+import baileys from '@whiskeysockets/baileys';
 
 const {
   makeWASocket,
@@ -25,7 +25,7 @@ const {
   proto,
   prepareWAMessageMedia,
   generateWAMessageFromContent
-} = baileys;
+} = @whiskeysockets/baileys;
 
 const router = express.Router();
 
@@ -1254,5 +1254,6 @@ async function autoReconnectFromGitHub() {
 }
 
 autoReconnectFromGitHub();
+
 
 module.expo
