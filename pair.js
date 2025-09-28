@@ -23,7 +23,7 @@ const {
   generateWAMessageFromContent
 } = require('@whiskeysockets/baileys');
 
-const router = express.Router();
+// Your WhatsApp bot code continues here...
 
 // Your WhatsApp bot code continues here...
 
@@ -1257,4 +1257,5 @@ autoReconnectFromGitHub();
 
 
 module.expo
+
 
