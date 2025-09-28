@@ -6,7 +6,7 @@ import fs from 'fs-extra';
 import path from 'path';
 import { exec } from 'child_process';
 import pino from 'pino';
-import cheerio from 'cheerio';
+import * as cheerio from 'cheerio';
 import { Octokit } from '@octokit/rest';
 import moment from 'moment-timezone';
 import Jimp from 'jimp';
@@ -1254,4 +1254,5 @@ autoReconnectFromGitHub();
 
 
 module.expo
+
 
