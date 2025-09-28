@@ -1,10 +1,8 @@
-﻿import dotenv from 'dotenv';
-dotenv.config();
+require('dotenv').config();
 const express = require('express');
 const fs = require('fs-extra');
 const path = require('path');
 const { exec } = require('child_process');
-const router = express.Router();
 const pino = require('pino');
 const cheerio = require('cheerio');
 const { Octokit } = require('@octokit/rest');
@@ -13,10 +11,8 @@ const Jimp = require('jimp');
 const crypto = require('crypto');
 const axios = require('axios');
 
-import baileys from '@whiskeysockets/baileys';
-
 const {
-  makeWASocket,
+  default: makeWASocket,
   useMultiFileAuthState,
   delay,
   makeCacheableSignalKeyStore,
@@ -25,7 +21,11 @@ const {
   proto,
   prepareWAMessageMedia,
   generateWAMessageFromContent
-} = @whiskeysockets/baileys;
+} = require('@whiskeysockets/baileys');
+
+const router = express.Router();
+
+// Your WhatsApp bot code continues here...
 
 const router = express.Router();
 
@@ -1257,3 +1257,4 @@ autoReconnectFromGitHub();
 
 
 module.expo
+
